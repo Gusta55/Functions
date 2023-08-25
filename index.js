@@ -38,14 +38,46 @@ function usuario() {
 
 usuario();
 */
+//Exercicio 2
 
 function usuario(nome , idade, cidade, profissao){
-	console.log(`Eu sou ${nome}, tenho ${idade} anos, moro ${cidade} e sou ${profissao}.`)
+
+	return `Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`
 
 }
 
-const nome1 = prompt("Digite o seu nome: ");
-const idade1 = prompt("Digite a sua idade: ");
-const cidade1 = prompt("Digite a sua cidade: ");
-const profissao1 = prompt("DIgite a sua profissao: ");
-usuario(nome1, idade1, cidade1, profissao1);
+const nome1 = "Gustavo";
+const idade1 = 22;
+const cidade1 = "São Leopoldo";
+const profissao1 = "vendedor";
+
+const result = usuario(nome1, idade1, cidade1, profissao1);
+console.log(result);
+
+
+
+//Exercicio 3
+/*
+function soma(a, b) {
+	const soma = a + b;
+	return soma;
+}
+
+function maior(a, b) {
+	const maiorValor =  a > b;
+	return maiorValor;
+}
+
+function parOuImpar(a) {
+	numPar = a % 2;
+	return numPar;
+}
+
+const num1 = Number(prompt("Digite um numero: "));
+const num2 = Number(prompt("Digite outro valor: "));
+let valorMaior;
+
+console.log("A soma dos dois números é: ", soma(num1, num2));
+console.log("O primeiro valor é maior que o segundo?", maior(num1, num2));
+console.log("O primeiro número é par: ", parOuImpar(num1) == 0);
+*/
